@@ -9,7 +9,7 @@
 #ifndef Node_h
 #define Node_h
 
-#include <assert.h.
+#include <assert.h>
 
 template <class Type>
 class Node
@@ -17,12 +17,17 @@ class Node
  private:
     Type data;
 public:
+    Node();
     Node(Type data);
     Type getData();
     void setData(Type data);
 };
 
 //Template definitions
+
+template <class Type>
+Node<Type> :: Node()
+{}
 
 template <class Type>
 Node<Type> :: Node(Type data)
@@ -36,7 +41,7 @@ Type Node<Type> :: getData()
     return data;
 }
 
-template <class type>
+template <class Type>
 void Node<Type> :: setData(Type data)
 {
     this->data = data;
