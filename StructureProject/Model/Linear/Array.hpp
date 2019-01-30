@@ -38,4 +38,28 @@ public:
     void setAtIndex(int index, Type data);
 };
 
+template <class Type>
+Array<Type> :: Array(int size)
+{
+    assert(size > 0);
+    this->size = size;
+    
+    internalArray = new Type[size];
+}
+
+template <class Type>
+Array<Type> :: Array(cconst Array<Type> toCopy)
+{
+    this->size = toCopyy.getSize();
+    
+    //Buil Data Structure
+    internalArray = new Type[size];
+    
+    for(int  index =0; index < size; index++)
+    {
+        internalArray[index] = toCopy[index];
+    }
+}
+
+
 #endif /* Array_h */
