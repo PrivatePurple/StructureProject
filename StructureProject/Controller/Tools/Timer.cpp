@@ -39,7 +39,7 @@ void Timer :: displayInformation()
     
 }
 
-long Timer :: getTimeInMicroseconds()
+long Timer :: getTimeInMicroSeconds()
 {
     return executionTime;
 }

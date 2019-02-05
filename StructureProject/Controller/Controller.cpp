@@ -22,4 +22,10 @@ void Controller :: usingNodes()
     cout << wordHolder.getData() << endl;
     wordHolder.setData("replaced text");
     cout << wordHolder.getData() << endl;
+    
+    vector<Music> tunes = FileController :: musicDataToVector("/Users/kdav1286/Documents/C++ Projects/StructureProject/StructureProject/Resouces/music.csv");
+    
+    vector<CrimeData> myData = FileController :: readCrimeDataToVector("/Users/kdav1286/Documents/C++ Projects/StructureProject/StructureProject/Resouces/crime.csv");
 }
+
+
