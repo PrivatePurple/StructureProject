@@ -47,7 +47,12 @@ LinearNode<Type> * LinearNode<Type> :: getNext()
     return this->next;
 }
 
-templatee <class Type>
+template <class Type>
+LinearNode<Type> * LinearNode<Type> :: getNextNode()
+{
+    return this->next;
+}
+template <class Type>
 void LinearNode<Type>  :: setNext(LinearNode<Type> * next)
 {
     this-> = next;
