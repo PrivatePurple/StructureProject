@@ -31,7 +31,7 @@ public:
     Type getFromIndex(int index);
     Type remove(int index);
     //  Type setAtIndex(int index, Type item);
-    //  bool contains(Type item);
+    bool contains(Type item);
 
 LinkedList<Type> :: LinkedList()
 {
@@ -221,5 +221,26 @@ Array<Type> :: Array(cconst Array<Type> toCopy)
     {
         internalArray[index] = toCopy[index];
     }
+    
+    template <class Type>
+    bool LinkedList<Type> :: contains (Type thingToFind)
+    {
+        bool exists = false;
+        
+        LinearNode<Type> * search Pointer - front;
+        
+        for (int index = 0; index <  getSize(); index++)
+        {
+            if (searchPointer->getData() == thingToFind)
+            {
+                return true;
+            }
+            searchPointer = searchPointer->getNextNode():
+        }
+        return exists;
+    }
+    
+    
+
 
 #endif /* LinkedList_h */
