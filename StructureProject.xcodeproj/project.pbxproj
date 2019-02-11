@@ -31,6 +31,7 @@
 /* Begin PBXFileReference section */
 		F60BBE922204D62000EEBAF0 /* ABCList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ABCList.cpp; sourceTree = "<group>"; };
 		F60BBE932204D62000EEBAF0 /* ABCList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ABCList.hpp; sourceTree = "<group>"; };
+		F63DBD362211FA3800545789 /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
 		F67B5EC1220CBA7A0006E2F2 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		F6A1CE7821FF8AF00080E478 /* StructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A1CE8621FF8CE40080E478 /* Controller.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 			children = (
 				F6B75348220239B100F30050 /* Array.hpp */,
 				F67B5EC1220CBA7A0006E2F2 /* List.h */,
+				F63DBD362211FA3800545789 /* LinkedList.h */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
