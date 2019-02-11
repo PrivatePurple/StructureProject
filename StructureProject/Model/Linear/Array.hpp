@@ -172,6 +172,15 @@ public:
         return this->end;
     }
     
+    LinearNode<Type> * LinkedList<Type> :: getFront()
+    {
+        return this->front;
+    }
+    
+    int LinkedList<Type> :: getSize() const
+    {
+        return this->size;
+    }
 };
 
 template <class Type>
