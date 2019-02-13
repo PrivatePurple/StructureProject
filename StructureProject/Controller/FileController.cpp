@@ -7,6 +7,15 @@
 //
 
 #include "FileController.hpp"
+#include "../Controller/Tools/Timer.hpp"
+#include "../Controller/FileController.hpp"
+
+#include "../Model/Linear/LinkedList.h"
+#include "../Model/Linear/Stack.hpp"
+#include "../Model/Linear/Queue.hpp"
+#include "../Model/Linear/Array.hpp"
+#include <iostream>
+
 
 vector<CrimeData> FileController :: readCrimeDataToVector(string filename)
 {
@@ -74,6 +83,7 @@ vector<Music> FileController :: musicDataToVector(string filename)
     {
         cerr << "NO FILE" << endl;
     }
+    
     
     return musicVector;
 }

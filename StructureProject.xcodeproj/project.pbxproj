@@ -14,6 +14,7 @@
 		F6BBD4A2220A1F8B0019D642 /* FileController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6BBD4A0220A1F8B0019D642 /* FileController.cpp */; };
 		F6BBD4A6220A253E0019D642 /* CrimeData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6BBD4A5220A253E0019D642 /* CrimeData.cpp */; };
 		F6BBD4AA220A26070019D642 /* Music.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6BBD4A9220A26070019D642 /* Music.cpp */; };
+		F6DE67ED2214AEA700A49056 /* LinearTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6DE67EB2214AEA700A49056 /* LinearTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,8 @@
 		F6BBD4A8220A25F80019D642 /* Music.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
 		F6BBD4A9220A26070019D642 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
 		F6DE67E92214AE2000A49056 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		F6DE67EB2214AEA700A49056 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
+		F6DE67EC2214AEA700A49056 /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,10 +96,11 @@
 		F6A1CE7A21FF8AF00080E478 /* StructureProject */ = {
 			isa = PBXGroup;
 			children = (
+				F6DE67EA2214AE8A00A49056 /* Testers */,
 				F6A1CE8221FF8B820080E478 /* Model */,
 				F6A1CE8321FF8B870080E478 /* Controller */,
 				F6A1CE8421FF8B910080E478 /* Diagrams */,
-				F6A1CE8521FF8B960080E478 /* Resouces */,
+				F6A1CE8521FF8B960080E478 /* Resources */,
 			);
 			path = StructureProject;
 			sourceTree = "<group>";
@@ -131,7 +135,7 @@
 			path = Diagrams;
 			sourceTree = "<group>";
 		};
-		F6A1CE8521FF8B960080E478 /* Resouces */ = {
+		F6A1CE8521FF8B960080E478 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				F6BBD4A9220A26070019D642 /* Music.cpp */,
@@ -141,7 +145,7 @@
 				F6BBD4A4220A249E0019D642 /* CrimeData.hpp */,
 				F6BBD4A3220A22B20019D642 /* crime.csv */,
 			);
-			path = Resouces;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F6B753452202293E00F30050 /* Nodes */ = {
@@ -172,6 +176,15 @@
 				F6BBD49E220A148A0019D642 /* Timer.hpp */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		F6DE67EA2214AE8A00A49056 /* Testers */ = {
+			isa = PBXGroup;
+			children = (
+				F6DE67EB2214AEA700A49056 /* LinearTester.cpp */,
+				F6DE67EC2214AEA700A49056 /* LinearTester.hpp */,
+			);
+			path = Testers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +246,7 @@
 				F6A1CE8821FF8CE40080E478 /* Controller.cpp in Sources */,
 				F6BBD4AA220A26070019D642 /* Music.cpp in Sources */,
 				F6A1CE8A21FF8DCE0080E478 /* Runner.cpp in Sources */,
+				F6DE67ED2214AEA700A49056 /* LinearTester.cpp in Sources */,
 				F6BBD4A6220A253E0019D642 /* CrimeData.cpp in Sources */,
 				F6BBD4A2220A1F8B0019D642 /* FileController.cpp in Sources */,
 				F60BBE942204D62000EEBAF0 /* ABCList.cpp in Sources */,

@@ -9,7 +9,7 @@
 #define Array_h
 #include <assert.h> //Used for validating user suuplied data.
 #include <iostream> //Used for tracing and debug statements.
-#include "List.hpp"
+//#include "list.hpp"
 
 using namespace std; //Used for keyword access.
 
@@ -30,7 +30,7 @@ public:
     
     //Operators
     Array <Type> & operator  = (const Array<Type> & toReplace);
-    Type& operator {} (int index);
+    Type& operator [] (int index);
     Type operator [] (int index) const;
     
     //Methods
@@ -51,7 +51,7 @@ Array<Type> :: Array(int size)
 template <class Type>
 Array<Type> :: Array(const Array<Type> & toCopy)
 {
-    this-> = toCopy.getSize();
+    this-> toCopy.getSize();
     
     //Build Data Structure
     internalArray = new Type[size];
@@ -103,13 +103,6 @@ template <class Type>
 Type Array<Type> :: operator [] (int index) const
 {
     assert(index >=0  && index < size);
-    return internalArray[index];
-}
-
-template <class Type>
-Type Array<Type> :: operator [] (int index) const
-{
-    assert(index >= 0 && inex < size);
     return internalArray[index];
 }
 
