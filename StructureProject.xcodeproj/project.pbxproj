@@ -100,7 +100,7 @@
 				F6A1CE8221FF8B820080E478 /* Model */,
 				F6A1CE8321FF8B870080E478 /* Controller */,
 				F6A1CE8421FF8B910080E478 /* Diagrams */,
-				F6A1CE8521FF8B960080E478 /* Resources */,
+				F6A1CE8521FF8B960080E478 /* Resouces */,
 			);
 			path = StructureProject;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 			path = Diagrams;
 			sourceTree = "<group>";
 		};
-		F6A1CE8521FF8B960080E478 /* Resources */ = {
+		F6A1CE8521FF8B960080E478 /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
 				F6BBD4A9220A26070019D642 /* Music.cpp */,
@@ -145,7 +145,7 @@
 				F6BBD4A4220A249E0019D642 /* CrimeData.hpp */,
 				F6BBD4A3220A22B20019D642 /* crime.csv */,
 			);
-			path = Resources;
+			path = Resouces;
 			sourceTree = "<group>";
 		};
 		F6B753452202293E00F30050 /* Nodes */ = {

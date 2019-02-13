@@ -9,14 +9,14 @@
 #ifndef FileController_hpp
 #define FileController_hpp
 
-#include "../Resouces/CrimeData.hpp"
+#include "/Users/kdav1286/Documents/C++ Projects/StructureProject/StructureProject/Resouces/CrimeData.hpp"
 #include "../Resouces/Music.hpp"
 #include <string>
 #include <fstream>
 #include <iostream>
 #include <vector>
 #include "../Model/Linear/Array.hpp"
-//#include "../Model/Linear/LinkedList.hpp"   <~~~~~~~~~~~~  NEED TO ADD!!!
+#include "/Users/kdav1286/Documents/C++ Projects/StructureProject/StructureProject/Model/Linear/LinkedList.h"
 // #include "../Model/NonLinear/BinarySearchTree.hpp
 
 using namespace std;
@@ -29,8 +29,8 @@ public:
     
     static Array<Music> musicDataToArray(string filename);
     
-    static LinkedList<CrimeData> readDataToList(string filename);
-    static LinkedList<Music> musicDataToList(string filename);
+static LinkedList<CrimeData> readDataToList(string filename);
+static LinkedList<Music> musicDataToList(string filename);
     
     // static BinarySearchTree<CrimeData> readDataToTree(string filename);
     // static BinarySearchTree<Music> musicDataToTree(String filename);
