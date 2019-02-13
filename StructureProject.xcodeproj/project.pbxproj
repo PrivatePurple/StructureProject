@@ -51,6 +51,7 @@
 		F6BBD4A7220A259A0019D642 /* music.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		F6BBD4A8220A25F80019D642 /* Music.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Music.hpp; sourceTree = "<group>"; };
 		F6BBD4A9220A26070019D642 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
+		F6DE67E92214AE2000A49056 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +160,7 @@
 				F67B5EC1220CBA7A0006E2F2 /* List.h */,
 				F63DBD362211FA3800545789 /* LinkedList.h */,
 				F63DBD372212111C00545789 /* Stack.h */,
+				F6DE67E92214AE2000A49056 /* Queue.h */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
