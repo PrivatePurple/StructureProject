@@ -8,6 +8,7 @@
 
 #ifndef LinkedList_h
 #define LinkedList_h
+#include "List.h"
 
 template <class Type>
 class LinkedList : public List<Type>
@@ -22,17 +23,19 @@ public:
     virtual ~LinkedList();  // Virtual so it can be overriden
     //Helper methods
     int getSize() const;
-    LinearNode<Type> * geetFront();
+    LinearNode<Type> * getFront();
     LinearNode<Type> * getEnd();
     
     //Structure Methods
-    vvoid add(Type item);
+    void add(Type item);
     void addAtIndex(int index, Type item);
     Type getFromIndex(int index);
     Type remove(int index);
-    //  Type setAtIndex(int index, Type item);
+    Type setAtIndex(int index, Type item);
     bool contains(Type item);
+};
 
+template <class Type>
 LinkedList<Type> :: LinkedList()
 {
     this->front = nullptr;
@@ -40,6 +43,7 @@ LinkedList<Type> :: LinkedList()
     this->size = 0;
 }
 
+template <class Type>
 LinkedList<Type> :: ~LinkedList()
 {
     LinearNode<Type> * destroyStructure = front;
@@ -51,6 +55,7 @@ LinkedList<Type> :: ~LinkedList()
     }
 }
 
+template <class Type>
 void LinkedList<Type> :: add(Type item)
 {
     LinearNode<Type> * newData = new LinearNode<Type>(item);
@@ -61,22 +66,23 @@ void LinkedList<Type> :: add(Type item)
     }
     else
     {
-        this->end->setNexNode(nnewData);
+        this->end->setNextNode(newData);
     }
     this->end = newData;
     this->size += 1;
 }
 
+template <class Type>
 void LinkedList<Type> :: addAtIndex(int index, Type item)
 {
-    assert(inxex >= 0 && index <= this->size);
+    assert(index >= 0 && index <= this->size);
     if(index == this->size)
     {
         add(item);
     }
     else
     {
-        LinearNode<Type> * toBeAdded = ew LinearNode<Type>(item);
+        LinearNode<Type> * toBeAdded = new LinearNode<Type>(item);
         if (index ==0)
         {
             toBeAdded->setNextNode(front);
@@ -98,8 +104,8 @@ void LinkedList<Type> :: addAtIndex(int index, Type item)
     }
 }
 
-
-Type LinkedList<Type> :: getFromIndex(index)
+template <class Type>
+Type LinkedList<Type> :: getFromIndex(int index)
 {
     assert(index >=0 && index < this->size);
     Type data;
@@ -116,6 +122,7 @@ Type LinkedList<Type> :: getFromIndex(index)
     return data;
 }
 
+template <class Type>
 Type LinkedList<Type> :: remove(int index)
 {
     assert(index >= 0 && index < this->size);
@@ -143,7 +150,7 @@ Type LinkedList<Type> :: remove(int index)
         
         if (index== this->size - 1)
         {
-            previous->setnextNode(nullptr);
+            previous->setNextNode(nullptr);
             end = previous;
         }
         else
@@ -159,75 +166,32 @@ Type LinkedList<Type> :: remove(int index)
     return removedData;
 }
 
+template <class Type>
 LinearNode<Type> * LinkedList<Type> :: getEnd()
 {
     return this->end;
 }
 
+template <class Type>
 LinearNode<Type> * LinkedList<Type> :: getFront()
 {
     return this->front;
 }
 
+template <class Type>
 int LinkedList<Type> :: getSize() const
 {
     return this->size;
 }
-};
 
-template <class Type>
-class Array
-{
-private: Type * internalArray;
-    int size;
-public:
-    //Constructor
-    Array<Type>(int size);
-    
-    //Copy Constructor
-    Array<Type>(cont Array<Type> & toCopy);
-    //Destructor
-    ~Array<Type>();
-    
-    //Operators
-    Array<Type> & operator = (const Array<Type> & toReplace);
-    Type& operator {} (int index);
-    Type operator [] (int idex) cost;
-    
-    //Methods
-    int getSize() const;
-    type getFromIndexintindex);
-    void setAtIndex(int index, Type data);
-};
 
+    
 template <class Type>
-Array<Type> :: Array(int size)
-{
-    assert(size > 0);
-    this->size = size;
-    
-    internalArray = new Type[size];
-};
-
-template <class Type>
-Array<Type> :: Array(cconst Array<Type> toCopy)
-{
-    this->size = toCopyy.getSize();
-    
-    //Buil Data Structure
-    internalArray = new Type[size];
-    
-    for(int  index =0; index < size; index++)
-    {
-        internalArray[index] = toCopy[index];
-    }
-    
-    template <class Type>
     bool LinkedList<Type> :: contains (Type thingToFind)
     {
         bool exists = false;
         
-        LinearNode<Type> * search Pointer - front;
+        LinearNode<Type> * searchPointer; - front;
         
         for (int index = 0; index <  getSize(); index++)
         {
@@ -235,12 +199,11 @@ Array<Type> :: Array(cconst Array<Type> toCopy)
             {
                 return true;
             }
-            searchPointer = searchPointer->getNextNode():
+            searchPointer = searchPointer->getNextNode();
         }
         return exists;
     }
-    
-    
+
 
 
 #endif /* LinkedList_h */

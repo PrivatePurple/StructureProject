@@ -22,6 +22,7 @@ private:
     void usingNodes();
 public:
     void start();
+    void testFiles();
 };
 
 #endif /* Controller_hpp */

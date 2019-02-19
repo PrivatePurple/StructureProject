@@ -29,8 +29,8 @@ public:
     
     static Array<Music> musicDataToArray(string filename);
     
-static LinkedList<CrimeData> readDataToList(string filename);
-static LinkedList<Music> musicDataToList(string filename);
+    static LinkedList<CrimeData> readDataToList(string filename);
+    static LinkedList<Music> musicDataToList(string filename);
     
     // static BinarySearchTree<CrimeData> readDataToTree(string filename);
     // static BinarySearchTree<Music> musicDataToTree(String filename);

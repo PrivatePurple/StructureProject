@@ -18,16 +18,19 @@ private:
     LinearNode<Type> * next;
 public:
     LinearNode();
-    LInearNode(Type data);
+    LinearNode(Type data);
     LinearNode(Type data, LinearNode<Type> * next);
-    LinearNode<Type> * getNext()
-    void setNext(LinearNode<Type> * next);
+    LinearNode<Type> * getNext();
+    LinearNode<Type> * getNextNode();
+    void setNextNode(LinearNode<Type> * next);
 };
 
 //Implementation of templates
 template <class Type>
-LinearNode<Type> :: LinearNode() : Node()
-{}
+LinearNode<Type> :: LinearNode() : Node<Type>()
+{
+    
+}
 
 template <class Type>
 LinearNode<Type> :: LinearNode(Type data) : Node<Type>(data)
@@ -36,7 +39,7 @@ LinearNode<Type> :: LinearNode(Type data) : Node<Type>(data)
 }
 
 template <class Type>
-LinearNode<Type> ::LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(Data)
+LinearNode<Type> ::LinearNode(Type data, LinearNode<Type> * next) : Node<Type>(data)
 {
     this->next = next;
 }
@@ -53,9 +56,9 @@ LinearNode<Type> * LinearNode<Type> :: getNextNode()
     return this->next;
 }
 template <class Type>
-void LinearNode<Type>  :: setNext(LinearNode<Type> * next)
+void LinearNode<Type>  :: setNextNode(LinearNode<Type> * next)
 {
-    this-> = next;
+    this->next = next;
 }
 
 #endif /* LinearNode_h */

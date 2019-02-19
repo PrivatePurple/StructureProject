@@ -9,10 +9,10 @@
 #ifndef Stack_h
 #define Stack_h
 
-#include "LinkedList.hpp"
+#include "LinkedList.h"
 
-tempate <class Type>
-cllass Stack : public LinkedList<Type>
+template <class Type>
+class Stack : public LinkedList<Type>
 {
 public:
     Stack();
@@ -28,6 +28,7 @@ public:
     void addAtIndex(int index, Type data);
     Type getFromIndex(int index);
     Type remove(int index);
+};
     
     template <class Type>
     Stack<Type> :: Stack() : LinkedList<Type>()
@@ -76,7 +77,7 @@ public:
     }
     
     template <class Type>
-    type Stack<Type> :: pop()
+    Type Stack<Type> :: pop()
     {
         assert (this->size > 0);
         Type removed = this->front->getData();
@@ -110,6 +111,5 @@ public:
         assert(index == 0);
         return peek();
     }
-}
 
 #endif /* Stack_h */

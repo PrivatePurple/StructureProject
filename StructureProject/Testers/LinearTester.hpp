@@ -14,8 +14,8 @@
 #include "../Controller/FileController.hpp"
 
 #include "../Model/Linear/LinkedList.h"
-#include "../Model/Linear/Stack.hpp"
-#include "../Model/Linear/Queue.hpp"
+#include "../Model/Linear/Stack.h"
+#include "../Model/Linear/Queue.h"
 #include "../Model/Linear/Array.hpp"
 #include <iostream>
 

@@ -25,7 +25,6 @@ Music :: Music(string data)
     getline(parseCSV, bars_confidence, ',');
     getline(parseCSV, bars_start, ',');
     getline(parseCSV, beats_confidence, ',');
-    getline(parseCSV, beats_confidence, ',');
     getline(parseCSV, beats_start, ',');
     getline(parseCSV, duration, ',');
     getline(parseCSV, end_of_fade_in, ',');
@@ -67,6 +66,7 @@ Music :: Music(string data)
     this->end_of_fade_in = (stod(end_of_fade_in));
     this->familiarity = (stod(familiarity));
     this->key = (stoi(key));
+    //Nice
     this->key_confidence = (stod(key_confidence));
     this->latitude = (stod(latitude));
     this->location = location;
@@ -78,7 +78,7 @@ Music :: Music(string data)
     this->release_name = release_name;
     this->similar = similar;
     this->song_hotttnesss = (stod(song_hotttnesss));
-    this->song_id = (stoi(song_id));
+    this->song_id = (song_id);
     this->start_of_fade_out = (stod(start_of_fade_out));
     this->tatums_confidence = (stod(tatums_confidence));
     this->tatums_start = (stod(tatums_start));
@@ -172,5 +172,5 @@ int Music :: getYear() const{   return  year; }
 
 ostream & operator << (ostream &outputStream, const Music & outputData)
 {
-    return outputStream << outputData.getSong_id() << " is the song " << outputData.getArtist_id() << " is the artist from " << outputData.getYear() << endl;;
+    return outputStream << outputData.getTitle() << " is the song " << outputData.getArtist_name() << " is the artist from " << outputData.getYear() << endl;;
 }
