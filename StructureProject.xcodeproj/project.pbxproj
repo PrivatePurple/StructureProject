@@ -34,6 +34,7 @@
 		F60BBE932204D62000EEBAF0 /* ABCList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ABCList.hpp; sourceTree = "<group>"; };
 		F63DBD362211FA3800545789 /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
 		F63DBD372212111C00545789 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		F67205C7221F289A00BDD508 /* DoubleNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleNode.h; sourceTree = "<group>"; };
 		F67B5EC1220CBA7A0006E2F2 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
 		F696D795221C933E00582B67 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
 		F696D797221C938100582B67 /* music.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
@@ -153,6 +154,7 @@
 			children = (
 				F6A1CE8C21FF914B0080E478 /* Node.hpp */,
 				F6B75346220232C800F30050 /* LinearNode.hpp */,
+				F67205C7221F289A00BDD508 /* DoubleNode.h */,
 			);
 			path = Nodes;
 			sourceTree = "<group>";
