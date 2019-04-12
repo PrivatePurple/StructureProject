@@ -37,6 +37,7 @@
 		F67205C7221F289A00BDD508 /* DoubleNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleNode.h; sourceTree = "<group>"; };
 		F67205C8221F2FD500BDD508 /* CircularList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularList.h; sourceTree = "<group>"; };
 		F67B5EC1220CBA7A0006E2F2 /* List.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		F68712C722610E88000637EB /* BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
 		F696D795221C933E00582B67 /* Music.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Music.cpp; sourceTree = "<group>"; };
 		F696D797221C938100582B67 /* music.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = music.csv; sourceTree = "<group>"; };
 		F6A1CE7821FF8AF00080E478 /* StructureProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StructureProject; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +58,7 @@
 		F6DE67E92214AE2000A49056 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		F6DE67EB2214AEA700A49056 /* LinearTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LinearTester.cpp; sourceTree = "<group>"; };
 		F6DE67EC2214AEA700A49056 /* LinearTester.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LinearTester.hpp; sourceTree = "<group>"; };
+		F6E0949D2238299800F31BE9 /* Graph.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,8 @@
 				F63DBD372212111C00545789 /* Stack.h */,
 				F6DE67E92214AE2000A49056 /* Queue.h */,
 				F67205C8221F2FD500BDD508 /* CircularList.h */,
+				F6E0949D2238299800F31BE9 /* Graph.h */,
+				F68712C722610E88000637EB /* BinaryTreeNode.h */,
 			);
 			path = Linear;
 			sourceTree = "<group>";
