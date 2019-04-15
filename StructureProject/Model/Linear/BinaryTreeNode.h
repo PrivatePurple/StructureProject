@@ -31,11 +31,11 @@ public:
 };
 
 template <class Type>
-
-template <class Type>
-BinaryTreeNode<Type> :: BinaryTreeNode()
+BinaryTreeNode<Type> :: BinaryTreeNode() : Node<Type>()
 {
-    
+    root = nullptr;
+    left = nullptr;
+    right = nullptr;
 }
 
 template <class Type>
